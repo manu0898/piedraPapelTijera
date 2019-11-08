@@ -1,0 +1,56 @@
+header{
+    margin-left: 100px;
+    font-size: 30px;
+    color: mediumslateblue;
+}
+div{
+    margin-top: 70px;
+    margin-left: 100px;
+    display: float;
+    height: 200px;
+}
+#spock{
+    background-image: url("img/spock.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    float:left;
+    border-radius: 90px;
+}
+#tijeras{
+    background-image: url("img/tijeras.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    float:left;
+    border-radius: 90px;
+}
+#piedra{
+    background-image: url("img/piedra.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    float:left;
+    border-radius: 90px;
+}
+#papel{
+    background-image: url("img/papel.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    float:left;
+    border-radius: 90px;
+}
+#lagarto{
+    background-image: url("img/lagarto.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    float:left;
+    border-radius: 90px;
+}
