@@ -3,15 +3,48 @@
     Created on : 08-nov-2019, 10:17:32
     Author     : daw209
 --%>
-
+<%@page import="Clases.Juego"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+
+<%
+    Juego j = new Juego();
+    
+    
+    String jugador = "";
+    String fraseFinal = "";
+
+    //apuesta del jugador
+    if (request.getParameter("spock") != null) {
+        jugador = "spock";
+    } else {
+        if (request.getParameter("tijeras") != null) {
+            jugador = "tijera";
+        } else {
+            if (request.getParameter("piedra") != null) {
+                jugador = "piedra";
+            } else {
+                if (request.getParameter("papel") != null) {
+                    jugador = "papel";
+                } else {
+                    if (request.getParameter("lagarto") != null) {
+                        jugador = "lagarto";
+                    }
+                }
+            }
+        }
+    }
+
+    //apuesta maquina
+    String maquina = j.apuesta();
+
+    //juego
+    String resultado = j.jugada(jugador,maquina);
+    
+
+    fraseFinal = resultado + " Tú has elegido " + jugador + " y la máquina eligió " + maquina;
+    //out.print(resultado + " Tú has elegido " + jugador + " y la máquina eligió " + maquina);
+    session.setAttribute("frase", fraseFinal);
+    
+    response.sendRedirect("resultado.jsp");
+
+%>
