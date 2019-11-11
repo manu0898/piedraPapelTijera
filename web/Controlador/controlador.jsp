@@ -8,8 +8,7 @@
 
 <%
     Juego j = new Juego();
-    
-    
+        
     String jugador = "";
     String fraseFinal = "";
 
