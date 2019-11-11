@@ -8,6 +8,6 @@
 
 <%
     if (request.getParameter("bt") != null) {
-        response.sendRedirect("index.html");
+        response.sendRedirect("../index.html");
     }
 %>

@@ -18,7 +18,7 @@
             out.print(session.getAttribute("frase"));
         %>
         
-        <form name="form" action="controladorResultado.jsp" method="POST">
+        <form name="form" action="../Controlador/controladorResultado.jsp" method="POST">
             <br><br><input type="submit" name="bt" value="Volver">
         </form>
     </body>
