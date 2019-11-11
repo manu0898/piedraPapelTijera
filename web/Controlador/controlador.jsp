@@ -45,6 +45,6 @@
     //out.print(resultado + " Tú has elegido " + jugador + " y la máquina eligió " + maquina);
     session.setAttribute("frase", fraseFinal);
     
-    response.sendRedirect("resultado.jsp");
+    response.sendRedirect("../Vistas/resultado.jsp");
 
 %>
